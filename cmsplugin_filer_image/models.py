@@ -7,7 +7,6 @@ from django.utils.translation import ugettext_lazy as _
 from filer.fields.file import FilerFileField
 from filer.fields.image import FilerImageField
 from filer.models import ThumbnailOption  # NOQA
-from filer.utils.compatibility import python_2_unicode_compatible
 
 from cms.models import CMSPlugin
 from cms.models.fields import PageField
@@ -17,7 +16,6 @@ from djangocms_attributes_field.fields import AttributesField
 from .conf import settings
 
 
-@python_2_unicode_compatible
 class FilerImage(CMSPlugin):
     LEFT = "left"
     RIGHT = "right"
